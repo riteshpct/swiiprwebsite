@@ -110,7 +110,7 @@ export const howItWorks = {
 
 export const featuresSections = [
   {
-    image: '/images/future-proof-payments-collage.webp',
+    image: `${base}/images/future-proof-payments-collage.webp`,
     title: 'Future-proof payments with our specialised airline platform',
     features: [
       {
