@@ -50,8 +50,8 @@ body {
 
 /* Selection color */
 ::selection {
-  background: rgba(212, 168, 75, 0.2);
-  color: #0C1B2A;
+  background: rgba(20, 52, 203, 0.15);
+  color: #0B1A5E;
 }
 
 /* Smooth image loading */
@@ -63,7 +63,7 @@ img {
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
-  outline: 2px solid #D4A84B;
+  outline: 2px solid #1434CB;
   outline-offset: 2px;
   border-radius: 4px;
 }

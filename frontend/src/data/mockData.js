@@ -108,7 +108,7 @@ export const howItWorks = {
 
 export const featuresSections = [
   {
-    image: 'https://images.unsplash.com/photo-1735469157670-1212e570eadc?w=700&q=80',
+    image: '/images/future-proof-payments-collage.webp',
     title: 'Future-proof payments with our specialised airline platform',
     features: [
       {

@@ -35,8 +35,8 @@ const AnimatedNumber = ({ target, label }) => {
 
   return (
     <div ref={ref} className="text-center">
-      <div className="text-5xl md:text-6xl font-bold text-[#0C1B2A] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
-        {count}<span className="text-[#D4A84B]">+</span>
+      <div className="text-5xl md:text-6xl font-bold text-[#0B1A5E] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
+        {count}<span className="text-[#1434CB]">+</span>
       </div>
       <div className="text-sm font-medium text-gray-500 tracking-wide uppercase">{label}</div>
     </div>
@@ -87,7 +87,7 @@ const LogoCarousel = () => {
           {allLogos.map((logo, i) => (
             <div
               key={`${logo.name}-${i}`}
-              className="flex-shrink-0 flex items-center justify-center h-16 px-8 rounded-xl border border-gray-100 bg-white hover:border-[#D4A84B]/30 hover:shadow-md hover:shadow-[#D4A84B]/5 transition-all duration-300"
+              className="flex-shrink-0 flex items-center justify-center h-16 px-8 rounded-xl border border-gray-100 bg-white hover:border-[#1434CB]/30 hover:shadow-md hover:shadow-[#1434CB]/5 transition-all duration-300"
             >
               <span className="text-sm font-bold text-gray-400 whitespace-nowrap tracking-wide" style={{ fontFamily: 'Inter, sans-serif' }}>
                 {logo.name}

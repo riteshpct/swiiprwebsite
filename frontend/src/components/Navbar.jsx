@@ -26,16 +26,16 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
             <div className={`w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300 ${
-              scrolled ? 'bg-gradient-to-br from-[#0C1B2A] to-[#1E3A5F]' : 'bg-white/20 backdrop-blur-sm'
+              scrolled ? 'bg-gradient-to-br from-[#1434CB] to-[#1029A8]' : 'bg-white/20 backdrop-blur-sm'
             }`}>
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                <path d="M12 2L2 7l10 5 10-5-10-5z" fill={scrolled ? '#D4A84B' : '#D4A84B'} opacity="0.9"/>
-                <path d="M2 17l10 5 10-5" stroke={scrolled ? '#D4A84B' : '#D4A84B'} strokeWidth="2" fill="none" opacity="0.6"/>
-                <path d="M2 12l10 5 10-5" stroke={scrolled ? '#D4A84B' : '#D4A84B'} strokeWidth="2" fill="none" opacity="0.8"/>
+                <path d="M12 2L2 7l10 5 10-5-10-5z" fill={scrolled ? '#1434CB' : 'white'} opacity="0.9"/>
+                <path d="M2 17l10 5 10-5" stroke={scrolled ? '#1434CB' : 'white'} strokeWidth="2" fill="none" opacity="0.6"/>
+                <path d="M2 12l10 5 10-5" stroke={scrolled ? '#1434CB' : 'white'} strokeWidth="2" fill="none" opacity="0.8"/>
               </svg>
             </div>
             <span className={`text-2xl font-bold tracking-tight transition-colors duration-300 ${
-              scrolled ? 'text-[#0C1B2A]' : 'text-white'
+              scrolled ? 'text-[#1434CB]' : 'text-white'
             }`} style={{ fontFamily: 'Playfair Display, serif' }}>
               swiipr
             </span>
@@ -52,7 +52,7 @@ const Navbar = () => {
                   href={link.href}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 flex items-center gap-1 ${
                     scrolled
-                      ? 'text-[#374151] hover:text-[#0C1B2A] hover:bg-[#F3F0EA]'
+                      ? 'text-[#374151] hover:text-[#1434CB] hover:bg-[#EBF0FF]'
                       : 'text-white/90 hover:text-white hover:bg-white/10'
                   }`}
                 >
@@ -65,7 +65,7 @@ const Navbar = () => {
                       <a
                         key={item.label}
                         href={item.href}
-                        className="block px-5 py-3 text-sm text-gray-600 hover:text-[#0C1B2A] hover:bg-[#FAF8F5] transition-colors"
+                        className="block px-5 py-3 text-sm text-gray-600 hover:text-[#1434CB] hover:bg-[#EBF0FF] transition-colors"
                       >
                         {item.label}
                       </a>
@@ -80,7 +80,7 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <a
               href="#book-demo"
-              className="inline-flex items-center px-6 py-2.5 text-sm font-semibold rounded-full transition-all duration-300 bg-[#0C1B2A] text-[#D4A84B] hover:bg-[#162544] hover:shadow-lg hover:shadow-[#0C1B2A]/20 hover:-translate-y-0.5"
+              className="inline-flex items-center px-6 py-2.5 text-sm font-semibold rounded-full transition-all duration-300 bg-[#1434CB] text-white hover:bg-[#1029A8] hover:shadow-lg hover:shadow-[#1434CB]/20 hover:-translate-y-0.5"
             >
               Book a Demo
             </a>
@@ -89,7 +89,7 @@ const Navbar = () => {
           {/* Mobile Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className={`lg:hidden p-2 rounded-lg transition-colors ${scrolled ? 'text-[#0C1B2A]' : 'text-white'}`}
+            className={`lg:hidden p-2 rounded-lg transition-colors ${scrolled ? 'text-[#1434CB]' : 'text-white'}`}
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -104,7 +104,7 @@ const Navbar = () => {
               <React.Fragment key={link.label}>
                 <a
                   href={link.href}
-                  className="block px-4 py-3 text-gray-700 hover:text-[#0C1B2A] hover:bg-[#FAF8F5] rounded-lg transition-colors text-sm font-medium"
+                  className="block px-4 py-3 text-gray-700 hover:text-[#1434CB] hover:bg-[#EBF0FF] rounded-lg transition-colors text-sm font-medium"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
@@ -113,7 +113,7 @@ const Navbar = () => {
                   <a
                     key={item.label}
                     href={item.href}
-                    className="block px-8 py-2.5 text-gray-500 hover:text-[#0C1B2A] hover:bg-[#FAF8F5] rounded-lg transition-colors text-sm"
+                    className="block px-8 py-2.5 text-gray-500 hover:text-[#1434CB] hover:bg-[#EBF0FF] rounded-lg transition-colors text-sm"
                     onClick={() => setMobileOpen(false)}
                   >
                     {item.label}
@@ -124,7 +124,7 @@ const Navbar = () => {
             <div className="pt-3">
               <a
                 href="#book-demo"
-                className="block text-center px-6 py-3 text-sm font-semibold rounded-full bg-[#0C1B2A] text-[#D4A84B]"
+                className="block text-center px-6 py-3 text-sm font-semibold rounded-full bg-[#1434CB] text-white"
               >
                 Book a Demo
               </a>

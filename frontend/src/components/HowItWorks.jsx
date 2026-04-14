@@ -25,21 +25,21 @@ const StepItem = ({ step, index, isActive, onClick }) => {
       style={{ transitionDelay: `${index * 150}ms` }}
     >
       <div className={`flex gap-5 p-5 rounded-2xl transition-all duration-300 ${
-        isActive ? 'bg-white shadow-lg shadow-black/5 border border-[#D4A84B]/20' : 'hover:bg-white/50'
+        isActive ? 'bg-white shadow-lg shadow-black/5 border border-[#1434CB]/20' : 'hover:bg-white/50'
       }`}>
         <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-300 ${
-          isActive ? 'bg-[#D4A84B] text-[#0C1B2A]' : 'bg-[#0C1B2A]/10 text-[#0C1B2A]'
+          isActive ? 'bg-[#1434CB] text-white' : 'bg-[#1434CB]/10 text-[#0B1A5E]'
         }`}>
           {step.number}
         </div>
         <div>
-          <h4 className="font-bold text-[#0C1B2A] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
+          <h4 className="font-bold text-[#0B1A5E] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
             {step.title}
           </h4>
           <ul className="space-y-2">
             {step.features.map((feature, i) => (
               <li key={i} className="flex items-center gap-2 text-sm text-gray-500">
-                <CheckCircle2 size={14} className={`flex-shrink-0 ${isActive ? 'text-[#D4A84B]' : 'text-gray-300'}`} />
+                <CheckCircle2 size={14} className={`flex-shrink-0 ${isActive ? 'text-[#1434CB]' : 'text-gray-300'}`} />
                 {feature}
               </li>
             ))}
@@ -54,15 +54,15 @@ const HowItWorks = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   return (
-    <section id="how-it-works" className="py-24 bg-[#FAF9F7]">
+    <section id="how-it-works" className="py-24 bg-[#F0F4FF]">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-6">
-          <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-[#D4A84B] mb-4">Process</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0C1B2A] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
+          <span className="inline-block text-xs font-semibold tracking-[0.2em] uppercase text-[#1434CB] mb-4">Process</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0B1A5E] mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
             {howItWorks.headline}
           </h2>
           <p className="text-lg text-gray-500 max-w-2xl mx-auto mb-4">{howItWorks.subheadline}</p>
-          <a href="#book-demo" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#D4A84B] text-[#0C1B2A] font-semibold text-sm transition-all duration-300 hover:bg-[#E0BA5E] hover:shadow-lg hover:shadow-[#D4A84B]/25">
+          <a href="#book-demo" className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#1434CB] text-white font-semibold text-sm transition-all duration-300 hover:bg-[#1029A8] hover:shadow-lg hover:shadow-[#1434CB]/25">
             Book a Demo <ArrowRight size={14} />
           </a>
         </div>
@@ -83,7 +83,7 @@ const HowItWorks = () => {
 
           {/* Active Step Image */}
           <div className="relative">
-            <div className="absolute inset-0 bg-[#D4A84B]/5 rounded-3xl blur-2xl" />
+            <div className="absolute inset-0 bg-[#1434CB]/5 rounded-3xl blur-2xl" />
             <div className="relative bg-white rounded-2xl p-6 shadow-xl shadow-black/5 border border-gray-100">
               <img
                 src={howItWorks.steps[activeStep].image}
