@@ -93,10 +93,7 @@ const LogoCarousel = () => {
                 <img
                   src={logo.url}
                   alt={logo.name}
-                  className="max-h-10 w-full object-contain opacity-60 hover:opacity-100 transition-all duration-500"
-                  style={{ filter: 'grayscale(100%) brightness(0.4)', transition: 'filter 0.5s, opacity 0.5s' }}
-                  onMouseEnter={(e) => { e.target.style.filter = 'grayscale(0%) brightness(1)'; }}
-                  onMouseLeave={(e) => { e.target.style.filter = 'grayscale(100%) brightness(0.4)'; }}
+                  className="max-h-10 w-full object-contain transition-all duration-500 hover:scale-105"
                 />
               ) : (
                 <span className="text-sm font-bold text-gray-400 whitespace-nowrap tracking-wide" style={{ fontFamily: 'Inter, sans-serif' }}>
