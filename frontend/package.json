@@ -1,6 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+  "homepage": "https://riteshpct.github.io/swiiprwebsite/build",
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
@@ -58,6 +59,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
+    "build:pages": "craco build && cp build/index.html ../index.html",
     "test": "craco test"
   },
   "browserslist": {
