@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/swiiprwebsite/build/static/css/main.cab7c1c0.css",
-    "main.js": "/swiiprwebsite/build/static/js/main.2ce2befd.js",
-    "index.html": "/swiiprwebsite/build/index.html",
-    "main.cab7c1c0.css.map": "/swiiprwebsite/build/static/css/main.cab7c1c0.css.map",
-    "main.2ce2befd.js.map": "/swiiprwebsite/build/static/js/main.2ce2befd.js.map"
+    "main.css": "/swiiprwebsite/frontend/build/static/css/main.cab7c1c0.css",
+    "main.js": "/swiiprwebsite/frontend/build/static/js/main.da901849.js",
+    "index.html": "/swiiprwebsite/frontend/build/index.html",
+    "main.cab7c1c0.css.map": "/swiiprwebsite/frontend/build/static/css/main.cab7c1c0.css.map",
+    "main.da901849.js.map": "/swiiprwebsite/frontend/build/static/js/main.da901849.js.map"
   },
   "entrypoints": [
     "static/css/main.cab7c1c0.css",
-    "static/js/main.2ce2befd.js"
+    "static/js/main.da901849.js"
   ]
 }
