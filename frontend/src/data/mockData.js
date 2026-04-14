@@ -23,17 +23,19 @@ export const partnerLogos = [
   { name: 'Plexa' },
 ];
 
+const base = process.env.PUBLIC_URL || '';
+
 export const clientLogos = [
-  { name: 'Dnata', url: '/images/logos/dnata.svg' },
-  { name: 'PLAY', url: '/images/logos/flyplay.svg' },
-  { name: 'LATAM', url: '/images/logos/latam.svg' },
-  { name: 'Norse Atlantic', url: '/images/logos/norse.svg' },
-  { name: 'Volotea', url: '/images/logos/volotea.svg' },
-  { name: 'Air India', url: '/images/logos/airindia.png' },
-  { name: 'Scoot', url: '/images/logos/scoot.png' },
-  { name: 'Swissport', url: '/images/logos/swissport.png' },
-  { name: 'British Airways', url: '/images/logos/britishairways.svg' },
-  { name: 'Iberia', url: '/images/logos/iberia.svg' },
+  { name: 'Dnata', url: `${base}/images/logos/dnata.svg` },
+  { name: 'PLAY', url: `${base}/images/logos/flyplay.svg` },
+  { name: 'LATAM', url: `${base}/images/logos/latam.svg` },
+  { name: 'Norse Atlantic', url: `${base}/images/logos/norse.svg` },
+  { name: 'Volotea', url: `${base}/images/logos/volotea.svg` },
+  { name: 'Air India', url: `${base}/images/logos/airindia.png` },
+  { name: 'Scoot', url: `${base}/images/logos/scoot.png` },
+  { name: 'Swissport', url: `${base}/images/logos/swissport.png` },
+  { name: 'British Airways', url: `${base}/images/logos/britishairways.svg` },
+  { name: 'Iberia', url: `${base}/images/logos/iberia.svg` },
 ];
 
 export const stats = [
