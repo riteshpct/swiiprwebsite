@@ -87,11 +87,22 @@ const LogoCarousel = () => {
           {allLogos.map((logo, i) => (
             <div
               key={`${logo.name}-${i}`}
-              className="flex-shrink-0 flex items-center justify-center h-16 px-8 rounded-xl border border-gray-100 bg-white hover:border-[#1434CB]/30 hover:shadow-md hover:shadow-[#1434CB]/5 transition-all duration-300"
+              className="flex-shrink-0 flex items-center justify-center h-16 w-44 px-6 rounded-xl border border-gray-100 bg-white hover:border-[#1434CB]/20 hover:shadow-md hover:shadow-[#1434CB]/5 transition-all duration-300"
             >
-              <span className="text-sm font-bold text-gray-400 whitespace-nowrap tracking-wide" style={{ fontFamily: 'Inter, sans-serif' }}>
-                {logo.name}
-              </span>
+              {logo.url ? (
+                <img
+                  src={logo.url}
+                  alt={logo.name}
+                  className="max-h-10 w-full object-contain opacity-60 hover:opacity-100 transition-all duration-500"
+                  style={{ filter: 'grayscale(100%) brightness(0.4)', transition: 'filter 0.5s, opacity 0.5s' }}
+                  onMouseEnter={(e) => { e.target.style.filter = 'grayscale(0%) brightness(1)'; }}
+                  onMouseLeave={(e) => { e.target.style.filter = 'grayscale(100%) brightness(0.4)'; }}
+                />
+              ) : (
+                <span className="text-sm font-bold text-gray-400 whitespace-nowrap tracking-wide" style={{ fontFamily: 'Inter, sans-serif' }}>
+                  {logo.name}
+                </span>
+              )}
             </div>
           ))}
         </div>

@@ -24,16 +24,16 @@ export const partnerLogos = [
 ];
 
 export const clientLogos = [
-  { name: 'Dnata' },
-  { name: 'PLAY' },
-  { name: 'LATAM' },
-  { name: 'Norse Atlantic' },
-  { name: 'Volotea' },
-  { name: 'Air India' },
-  { name: 'Scoot' },
-  { name: 'Swissport' },
-  { name: 'British Airways' },
-  { name: 'Iberia' },
+  { name: 'Dnata', url: '/images/logos/dnata.svg' },
+  { name: 'PLAY', url: '/images/logos/flyplay.svg' },
+  { name: 'LATAM', url: '/images/logos/latam.svg' },
+  { name: 'Norse Atlantic', url: '/images/logos/norse.svg' },
+  { name: 'Volotea', url: '/images/logos/volotea.svg' },
+  { name: 'Air India', url: '/images/logos/airindia.png' },
+  { name: 'Scoot', url: '/images/logos/scoot.png' },
+  { name: 'Swissport', url: '/images/logos/swissport.png' },
+  { name: 'British Airways', url: '/images/logos/britishairways.svg' },
+  { name: 'Iberia', url: '/images/logos/iberia.svg' },
 ];
 
 export const stats = [
