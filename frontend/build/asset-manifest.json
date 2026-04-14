@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/frontend/build/static/css/main.cab7c1c0.css",
+    "main.js": "/frontend/build/static/js/main.cfedfd4f.js",
+    "index.html": "/frontend/build/index.html",
+    "main.cab7c1c0.css.map": "/frontend/build/static/css/main.cab7c1c0.css.map",
+    "main.cfedfd4f.js.map": "/frontend/build/static/js/main.cfedfd4f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cab7c1c0.css",
+    "static/js/main.cfedfd4f.js"
+  ]
+}
